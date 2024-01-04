@@ -1,0 +1,11 @@
+# Use an official MySQL runtime as a parent image
+FROM mysql:latest
+
+# Set the root password for MySQL
+ENV MYSQL_ROOT_PASSWORD=root
+
+# Create a database and user for phpMyAdmin
+ENV MYSQL_DATABASE=mydatabase
+ENV MYSQL_USER=myuser
+ENV MYSQL_PASSWORD=my
+
